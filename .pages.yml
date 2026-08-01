@@ -1,0 +1,30 @@
+media: public/images
+
+content:
+
+  - name: blog
+    label: Blog
+    type: collection
+    path: src/content/blog
+
+    fields:
+
+      - name: title
+        label: Title
+        type: string
+
+      - name: description
+        label: Description
+        type: text
+
+      - name: pubDatetime
+        label: Publish Date
+        type: date
+
+      - name: draft
+        label: Draft
+        type: boolean
+
+      - name: body
+        label: Body
+        type: rich-text
