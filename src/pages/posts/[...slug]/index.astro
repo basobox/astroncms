@@ -29,6 +29,12 @@ export async function getStaticPaths() {
 
 
   return sortedPosts.map((post, index) => ({
+
+    console.log(
+      "SLUG:",
+      getPostSlug(post.id, post.filePath)
+    );
+
     params: { slug: getPostSlug(post.id, post.filePath) },
     props: {
       post,
